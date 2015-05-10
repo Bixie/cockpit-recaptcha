@@ -1,0 +1,8 @@
+{
+  "name"       : "Recaptcha",
+  "version"    : "1.0",
+  "description": "Google ReCaptcha plugin for forms",
+  "homepage"   : "http://www.bixie.nl",
+  "repo"       : "https://github.com/Bixie/cockpit-recaptcha",
+  "license"    : "MIT"
+}
