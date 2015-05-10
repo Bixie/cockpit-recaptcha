@@ -55,9 +55,10 @@ $this->module("recaptcha")->extend([
 	},
 
 	'settingsIndex' => function () use ($app) {
+		$config = $this->getConfig();
 		return $app->view("recaptcha:views/settings.php", [
-			'site_key' => $this->site_key,
-			'secret_key' => $this->secret_key
+			'site_key' => $config['site_key'],
+			'secret_key' => $config['secret_key']
 		]);
 	},
 

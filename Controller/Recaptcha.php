@@ -5,10 +5,10 @@ namespace Recaptcha\Controller;
 class Recaptcha extends \Cockpit\Controller
 {
     public function index() {
-        $recaptcha = cockpit("recaptcha");
+        $config = cockpit("recaptcha")->getConfig();
         return $this->render("recaptcha:views/index.php",[
-			'site_key' => $recaptcha->site_key,
-			'secret_key' => $recaptcha->secret_key
+			'site_key' => $config['site_key'],
+			'secret_key' => $config['secret_key']
 		]);
     }
 
