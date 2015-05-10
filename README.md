@@ -24,7 +24,7 @@ git clone https://github.com/Bixie/cockpit-recaptcha Recaptcha
 Place widget in form:
 
 ```php
-get_recaptcha();
+echo get_recaptcha();
 ```
 
 ## Validate input
